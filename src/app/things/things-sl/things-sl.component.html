@@ -5,7 +5,7 @@
 </div>
 
 <p>Date/Time   TemperatureC </p>
-<div *ngIf="!isFetching">
+<div *ngIf="!isFetching" ngClass="thingsTable">
     <p *ngFor="let slItem of slData; let i = index">
         <app-things-sl-item [slItem]="slItem" [index]="i"></app-things-sl-item>
     </p>   

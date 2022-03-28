@@ -1,0 +1,5 @@
+.thingsTable {
+    color:lightgray;
+}
+.thingsTable p:nth-child(even) {
+    background-color:darkgray}
