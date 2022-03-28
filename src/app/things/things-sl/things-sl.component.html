@@ -1,0 +1,14 @@
+<hr>
+
+<div *ngIf="isFetching">
+    <p><i>loading ...</i></p>
+</div>
+
+<p>Date/Time   TemperatureC </p>
+<div *ngIf="!isFetching">
+    <p *ngFor="let slItem of slData; let i = index">
+        <app-things-sl-item [slItem]="slItem" [index]="i"></app-things-sl-item>
+    </p>   
+</div>
+
+<button (click)="btnNew()">New</button>
